@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+    background-color: #181818;
+    /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#righ {
+    flex: 1;
+}
+
+/* sign*/
+#sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#sign form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#sign .logo {
+    margin-bottom: 8vh;
+}
+
+#sign .logo img {
+    width: 300px;
+}
+
+#sign label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+#sign .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 10%;
+    background-color: #181818;
+    border: 1PX solid #555;
+    color: #cccAEF;
+    padding: 0.5REM 1rem;
+    line-height: 1.3rem;
+
+
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background-color: #f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+
+.links {
+    width: 60%;
+}
+
+#sign .links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.primary-btn:hover {
+    background-color: #f78b55;
+}
+
+#sign .primary-btn {
+    width: 100%;
+}
+
+/* 
+#sign .or {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    align-items: center;
+} */
+
+/* 
+/* #showcase {
+    background-image: url('../Image/pexels-souvenirpixels-1519088.jpg') no-repeat center center / cover;
+} */
+#showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Image/pexels-souvenirpixels-1519088.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#showcase .showcase-text {
+
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+}
+
+#sign .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#sign .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 80%;
+    padding-top: 5rem;
+}
+
+#main-footer {
+    color-scheme: #ccc;
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px;
+    border-radius: 2px;
+    border: 1px solid white;
+    font-weight: 500;
+    background-color: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+
+.secondary-btn:hover {
+    border-color: #f78b55;
+    color: #ff7b39;
+}
+
+#sign .secondary-btn {
+    width: 100%;
+}
+
+/*Media Queries*/
+@media(min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+
+    #righ {
+        flex: 6;
+
+    }
+}
